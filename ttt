@@ -1,5 +1,5 @@
 		
-function reload() {
+(function() {
 	
 	var reloadSVG = icon_server_reload
 	var reloadBUTT = '<div id="RELOAD" class="head__action selector redirect-screen">' + reloadSVG + '</div>';
