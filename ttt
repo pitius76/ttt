@@ -70,13 +70,14 @@ function reload() {
 	});
   } 
 
-if (window.appready) {reload(); button();}
+if (window.appready) {reload(); button(); source();}
     else {
         Lampa.Listener.follow('app', function(e) {
             // если приложение прогрузилось
             if (e.type == 'ready') {
                 reload();
                 button();
+                source();
             }
         });
     }
