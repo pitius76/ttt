@@ -35,7 +35,8 @@ Lampa.Listener.follow('full', function(e) {
           $torrentButton.insertAfter($parent.children().eq(1)); // Вставляем $torrentButton после второго элемента
         }
       });
-Lampa.Controller.toggle('full_start');
+    Lampa.Controller.toggle('full_start');
+    $(".view--online", Lampa.Activity.active().activity.render()).empty().append('<svg width="190px" height="190px" viewBox="0 0 64.00 64.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--emojione-monotone" preserveAspectRatio="xMidYMid meet" fill="#ffffff" stroke="#ffffff" stroke-width="0.00064" transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="2.944"></g><g id="SVGRepo_iconCarrier"><path d="M32 2C15.432 2 2 15.432 2 32s13.432 30 30 30s30-13.432 30-30S48.568 2 32 2zm10.345 20.61H27.68v6.673h12.854v5.039H27.68v12.166h-6.024V17.512h20.689v5.098z" fill="#d05025"></path></g></svg>&nbsp;&nbsp; Filmix');
     }, 10);
   }
 });
