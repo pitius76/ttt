@@ -1,13 +1,14 @@
-/* ===== ИСТОЧНИКИ ===== */
 (function() {
+Lampa.Platform.tv();
+
 var styleElement = document.createElement('style');
 styleElement.innerHTML = '.extensions__item-descr { display: none; }';
 document.head.appendChild(styleElement);
 
-})();
-
-(function() {
 Lampa.Controller.listener.follow('toggle', function(e) {
      if(e.name == 'select') {
        setTimeout(function() {var elementIZ = $('.selectbox-item.selector > div:contains("Изменить ссылку")'); if(elementIZ.length > 0) elementIZ.parent('div').hide();}, 10);
-}})
+   }
+})
+
+})();
