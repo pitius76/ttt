@@ -1,5 +1,6 @@
 /* ===== ИСТОЧНИКИ ===== */
 (function() {
+ 'use strict';
 Lampa.Platform.tv();
 var styleElement = document.createElement('style');
 styleElement.innerHTML = '.extensions__item-descr { display: none; }';
