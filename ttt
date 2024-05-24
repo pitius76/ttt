@@ -1,6 +1,4 @@
 (function() {
-Lampa.Platform.tv();
-
 var hideNoty = false;
 
 if (hideNoty) {
