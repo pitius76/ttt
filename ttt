@@ -2,7 +2,7 @@
 var hideNoty = false;
 
 if (hideNoty) {
-  Lampa.Noty.show("Script Error");
+  Lampa.Noty.show("Error: Script error.");
 }
 
 })();
