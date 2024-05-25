@@ -1,8 +1,23 @@
 (function() {
-var hideNoty=false;
 
-if (hideNoty) {
-  Lampa.Noty.show("Error: Script error.");
+// Функция для наблюдения и удаления уведомлений с ошибкой "Error: Script error."
+function delScriptErrorNoty() {
+  // Создаем наблюдатель за изменениями в DOM
+  var observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      // Ищем и удаляем элементы уведомлений с текстом "Error: Script error."
+      var notyElements = document.querySelectorAll('.noty-element:contains("Error: Script error.")');
+      notyElements.forEach(function(element) {
+        element.remove();
+      });
+    });
+  });
+
+  // Начинаем наблюдение за изменениями в DOM
+  observer.observe(document.body, { childList: true, subtree: true });
 }
+
+// Вызываем функцию для начала удаления уведомлений с ошибкой
+delScriptErrorNoty();
 
 })();
